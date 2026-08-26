@@ -25,9 +25,7 @@ spec:
     spec: 
       containers:
       - name: cart  # container name 
-        image:
-          repository: "{{ .Values.deployment.imageRepo }}:{{ .Values.deployment.imageVersion }}"
-          tag: "1.0.0"
+        image: "{{ .Values.deployment.imageRepo }}:{{ .Values.deployment.imageVersion }}"
         ports: 
         - containerPort: 8080 
         envFrom:
