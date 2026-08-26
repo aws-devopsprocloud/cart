@@ -25,7 +25,6 @@ spec:
     spec: 
       containers:
       - name: cart  # container name 
-        # image: "devopsprocloudaws/cart:{{ .Values.cart.deployment.imageVersion }}"
         image:
           repository: "{{ .Values.deployment.imageRepo }}:{{ .Values.deployment.imageVersion }}"
           tag: "1.0.0"
